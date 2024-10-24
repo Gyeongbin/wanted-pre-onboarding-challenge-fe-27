@@ -1,0 +1,34 @@
+name: new issue
+description: Make New issue.
+title: '✨Feat: '
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Project gitmoji description
+        ✨ Feat: 새로운 기능 추가
+        🐛 Bug: 오류 발견 및 수정
+        🚀 Deploy: 배포 관련 모든 사항
+        ♻️ Refactor: 코드 리팩토링
+        💄 Style: UI, style 파일 수정
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description Issue
+      description: 해당 이슈 내용에 대해 간략히 설명합니다.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: To-do
+      description: To-do
+      placeholder: 해야 할 목록 정리
+      value: |
+        - [ ] 
+        - [ ]
+        - [ ]
+    validations:
+      required: true
